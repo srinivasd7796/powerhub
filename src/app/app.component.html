@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div class="wrapper">
+  <div class="multi_color_border"></div>
+  <div class="top_nav">
+      <div class="left">
+        <div class="logo"><img src="../assets/actpow.jpg"></div>
+        <div class="search_bar">
+            <input type="text" placeholder="Search">
+            <button type="button" class="btn btn-search">knockme</button>
+        </div>
+    </div> 
+    <div class="right">
+      <ul>
+        <li><i class="fas fa-home fa-3x"></i><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/login">LogIn</a></li>
+        <li><a routerLink="/signup">SignUp</a></li>
+        <li><a routerLink="/orders">Orders</a></li>
+        <li><a routerLink="/cart">Cart</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom_nav">
+    <ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" routerLink="/catagory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user"></i>catagory</a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+          <a class="dropdown-item" routerLink="/catagory/spare">Spare</a>
+          <a class="dropdown-item" routerLink="/catagory/readymade">Ready made</a>
+        </div>
+      </li>
+      <li><a routerLink="/tradeshows">Tradeshows</a></li>
+      <li><a routerLink="/sellonpowerhub">Sell on powerhub</a></li>
+      <li><a routerLink="/help">Help</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" routerLink="/shipto"id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user"></i>Ship to:</a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+          <a class="dropdown-item" routerLink="/shipto/insideindia">Inside india</a>
+          <a class="dropdown-item" routerLink="/shipto/othercountries">Other countries</a>
+        </div>
+      </li>
+      
+    </ul>
+</div>
+</div>
+
+<router-outlet></router-outlet>
+</body></html>

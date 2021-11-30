@@ -1,0 +1,12 @@
+body {
+    background-color: #eee
+}
+
+.btn-sm {
+    width: 100px
+}
+
+.card {
+    width: 100%;
+    background-color: #fff
+}
