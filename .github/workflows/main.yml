@@ -1,0 +1,50 @@
+name: Parallel Workflow Example
+
+on:
+  workflow_dispatch
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies for Job 1"
+          # Add commands to install dependencies for Job 1
+
+      - name: Run Job 1 task
+        run: |
+          echo "Running Job 1 tasks"
+          # Add commands to run your tests, builds, etc.
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies for Job 2"
+          # Add commands to install dependencies for Job 2
+
+      - name: Run Job 2 task
+        run: |
+          echo "Running Job 2 tasks"
+          # Add commands to run your tests, builds, etc.
+
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies for Job 3"
+          # Add commands to install dependencies for Job 3
+
+      - name: Run Job 3 task
+        run: |
+          echo "Running Job 3 tasks"
+          # Add commands to run your tests, builds, etc.
