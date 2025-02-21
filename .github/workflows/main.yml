@@ -20,7 +20,7 @@ jobs:
           # Add commands to run your tests, builds, etc.
 
   job2:
-    runs-on: ubuntu-latest
+    runs-on: ubuntukkk-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
