@@ -43,5 +43,6 @@ jobs:
 
     - name: Use test result for deployment
       run: |
-        cat artifacts/result.log
+        cd artifacts
+        cat result.log
         echo "Deploying application..."
