@@ -10,6 +10,3 @@ psycopg2==2.9.3          # PostgreSQL adapter for Python
 # Data manipulation and analysis
 pandas==1.4.2            # Data analysis and manipulation library
 numpy==1.22.4            # Library for numerical computing
-
-# Additional dependencies
-dotenv==0.19.2           # For managing environment variables
