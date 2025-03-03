@@ -23,7 +23,7 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest > result.log; tail -n 10 result.log
+        pytest > result.log
 
     - name: Upload test result as an artifact
       uses: actions/upload-artifact@v4
